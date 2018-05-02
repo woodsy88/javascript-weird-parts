@@ -1,0 +1,39 @@
+<script>
+    var person = new Object();
+
+    person["firstname"]= "tony";
+    person["lastname"] = "farts"
+
+    var firstNameProperty = "firstname";
+
+    console.log(person);
+
+    console.log(person[firstNameProperty]);
+
+    person.address = new Object(["farts", "poop"]);
+
+    person.address.street = "richmond dr";
+
+    // OBJECT LITERALS
+
+    var person2 = {};
+
+    var Tony = {
+        firstname: "farts",
+        lastname: "poop"
+    }
+
+    function greeting(person) {
+        console.log('Hi ' + person.firstname);
+        
+    }
+
+    greeting(Tony);
+
+    greeting({
+        firstname: 'Mary',
+        lastname: "Sue"
+    });
+    
+    
+</script>

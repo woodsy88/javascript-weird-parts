@@ -1,0 +1,68 @@
+<script>
+
+var b = "farts";
+
+  function a() {
+    console.log(b);
+    console.log(this);
+    
+  }
+
+  a();
+  // = "farts"
+
+  console.log(this);
+  
+
+  var c = {
+    name: ' the c objects',
+    log: function() {
+
+     var self = this; 
+     
+      self.name = 'Updated c object';
+      console.log(self);
+      // {name: "Updated c object", log: ƒ}
+      
+      var setname = function(newname) {
+        self.name = newname;
+      }
+
+      setname('updated again! the c object');
+      console.log(self);
+
+    },
+    age: 23,
+    birthday: function(){
+      this.age += 1;
+      console.log(this); 
+        // = 24  
+    }
+  }
+  c.log()
+  c.birthday();
+
+
+
+    var c = {
+        name: ' the c objects',
+        log: function () {
+
+          var self = this;
+
+          self.name = 'Updated c object';
+          console.log(self);
+          // {name: "Updated c object", log: ƒ}
+
+          var setname = function (newname) {
+            self.name = newname;
+          }
+          setname('updated again! the c object');
+          console.log(self);
+
+        }
+      }
+  
+
+
+</script>

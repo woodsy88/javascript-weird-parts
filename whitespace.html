@@ -1,0 +1,26 @@
+<script>
+
+var firstname, lastname, language;
+
+var person = {
+  firstname: 'andrew',
+  lastname: 'woods'
+}
+
+console.log(person);
+
+
+var greeting = function(name) {
+  console.log('Hello ' + name);
+}('jon');
+
+var firstname = 'Johnny';
+
+(function(name){
+    var greeting = 'inside IIFE: Hello';
+    console.log(greting + ' ' + name);
+    
+}(firstname)); // inside IIFE: Hello johnny
+
+
+</script>

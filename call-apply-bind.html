@@ -1,0 +1,23 @@
+<script>
+
+var person = {
+  firstname: 'andrew',
+  lastname: 'woods',
+  getFullName: function(){
+    var fullname = this.firstname + ' ' + this.lastname;
+    return fullname;
+  }
+}
+
+var logname = function(lan1, lang2){
+  console.log('logged name:' + this.getFullName());
+  console.log('Rguments:' +);
+  
+}
+
+var logPersonName =  logname.bind(person);
+
+logPersonName();
+//logged name:andrew woods
+
+</script>

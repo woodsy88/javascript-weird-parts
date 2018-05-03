@@ -1,0 +1,31 @@
+<script>
+
+
+  function sayHiLater() {
+    var greeting = 'hi';
+
+    setTimeout(function () {
+      console.log(greeting);
+
+    }, 3000);
+  }
+
+  sayHiLater();
+
+//-------------------------------------------
+
+  function tellMeWhenDone(callback) {
+     var a = 1000;
+     var b = 2000;
+      //invoke the parameter function inside this function - a call back function
+     callback();
+  };
+
+//pass a function as a paramer
+  tellMeWhenDone(function(){
+    console.log('i am done');
+  });
+
+
+
+</script>
